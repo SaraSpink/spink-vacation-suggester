@@ -1,12 +1,12 @@
 # _Web Programming Portfolio_
 
-#### Portfolio Landing Page - 5.10.17
+#### Vacation Selector - 6.8.17
 
 #### By Sara Spink
 
 ## Description
 
-_A landing page for my web programming portfolio which demonstrates my knowledge of HTML, CSS, Bootstrap, Git and GitHub, and good coding habits._
+_A Javascript._
 
 ## Setup Instructions
 
@@ -21,6 +21,8 @@ _Visit GH Pages to view site; follow active links_
 * HTML
 * CSS
 * Bootstrap
+* Javascript
+* Jquery
 
 ## Support and contact details
 
