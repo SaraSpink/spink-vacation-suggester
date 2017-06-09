@@ -22,7 +22,7 @@ _Visit GH Pages to view site; input information into form_
 - CSS
 - Bootstrap
 - Javascript
-- Jquery
+- JQuery
 
 ## Support and contact details
 
