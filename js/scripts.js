@@ -1,6 +1,6 @@
 $(document).ready(function() {
   $("form#user-prefs").submit(function(event) {
-    var userName = parseInt($("input#userName").val());
+    var userName = $("input#userName").val();
     var travelerAges = $("select#travelerAges").val();
     var destination = $("select#destination").val();
     var location = $("select#location").val();
@@ -8,7 +8,7 @@ $(document).ready(function() {
     var pace = $("select#pace").val();
     var accomodation = $("select#accomodation").val();
 
-    if (age < 18 && allergies === 'yes' && activity === 'high') {
+    if (allergies === 'yes' && activity === 'high') {
           $("#doodle").show();
           $("#pug").hide();
           $("#lab").hide();

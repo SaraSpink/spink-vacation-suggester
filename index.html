@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <script src="js/jquery-3.2.1.js"></script>
-    <script src="js/scripts.js"></script>
-    <title>Vacation Suggester</title>
-  </head>
-  <body>
-    <div class="container">
-      <h1>Where should I go on vacation?</h1>
+
+<head>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-3.2.1.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>Vacation Suggester</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Where should I go on vacation?</h1>
 
     <form id="user-prefs">
       <div class="form-group">
@@ -75,13 +77,36 @@
             <option value="hotel">I want to be comfortable but I don't need anything fancy.</option>
         </select>
       </div>
+      <button type="submit" class="btn btn-info btn-lg">Where should I go?</button>
     </form>
+
+
+    <!-- Vacation Destinations -->
+    <div id="ireland">
+      <h1>Ireland</h1>
+      <p>There is much to do in Ireland! Rich traditions, breathtaking landscapes, and a vibrant culture will make your visit unforgettable.
+      </p>
+      <h3>Travel to<a href=https://www.tourismireland.com> Ireland </a></h3>
+        <ul>
+          <li>Visit<a href=http://www.visitdublin.com> Dublin,</a> capital of the Republic of Ireland.</li>
+          <li>Drive the<a href=http://www.wildatlanticway.com/home> Wild Atlantic Way</a> and experience 2,500km of Irish coastal life.</li>
+          <li>Film buffs will love this<a href=http://www.ireland.com/en-us/itineraries/touring-routes/ireland-on-screen/> tour of locations</a> from movies you love.</li>
+        </ul>
     </div>
 
+    <div id="tahiti">
+      <h1>Tahiti</h1>
+      <p>Soak up some sun in Tahiti! This island paradise in the South Pacific is a great place to unwind.
+      </p>
+      <h3>Travel to<a href=http://www.tahiti-tourisme.com> Tahiti </a></h3>
+        <ul>
+          <li>Stay in an<a href=http://www.islands.com/tahitis-20-best-overwater-bungalow-resorts> Overwater Bungalow,</a> a unique and romantic experience!</li>
+          <li>Go<a href=http://www.boraboraislandguide.com/snorkeling-in-bora-bora.html> snorkeling </a>on Bora Bora.</li>
+        </ul>
+    </div>
 
+  </div>
 
+</body>
 
-
-
-  </body>
 </html>
