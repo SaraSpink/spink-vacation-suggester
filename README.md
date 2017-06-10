@@ -10,11 +10,13 @@ _A website where a user can input information about their taste and preferences 
 
 ## Setup Instructions
 
-_Visit GH Pages to view site; input information into form_
+1) Click on GH Pages link below to view in browser
+2) Input your information into the form
+3) Click _Tell me my destination!_ button to learn about your destination
 
 ## View on GitHub Pages
 
-[Sara's Trip Selector Site](https://saraspink.github.io/***********/)
+[Sara's Trip Selector Site](https://saraspink.github.io/spink-vacation-suggester/)
 
 ## Technologies Used
 
