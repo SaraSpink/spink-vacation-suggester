@@ -1,8 +1,12 @@
 $(document).ready(function() {
   $("form#user-prefs").submit(function(event) {
-    var pace = parseInt($("input#age").val());
-    var destination = $("select#allergies").val();
-    var activity = $("select#activity").val();
+    var userName = parseInt($("input#userName").val());
+    var travelerAges = $("select#travelerAges").val();
+    var destination = $("select#destination").val();
+    var location = $("select#location").val();
+    var weather = $("select#weather").val();
+    var pace = $("select#pace").val();
+    var accomodation = $("select#accomodation").val();
 
     if (age < 18 && allergies === 'yes' && activity === 'high') {
           $("#doodle").show();
@@ -21,9 +25,9 @@ $(document).ready(function() {
           $("#lab").hide();
           $("#doodle").hide();
         }
-    console.log(activity);
-    console.log(allergies);
-    console.log(age);
+    console.log("name: " + userName);
+    console.log(travelerAges);
+    console.log(destination);
         event.preventDefault();
       });
     });
