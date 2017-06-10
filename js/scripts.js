@@ -1,33 +1,41 @@
 $(document).ready(function() {
   $("form#user-prefs").submit(function(event) {
     var userName = $("input#userName").val();
-    var travelerAges = $("select#travelerAges").val();
+    var travelerDemo = $("select#travelerDemo").val();
     var destination = $("select#destination").val();
     var location = $("select#location").val();
     var weather = $("select#weather").val();
     var pace = $("select#pace").val();
     var accomodation = $("select#accomodation").val();
 
-    if (allergies === 'yes' && activity === 'high') {
-          $("#doodle").show();
-          $("#pug").hide();
-          $("#lab").hide();
-        } else if (age >= 18 && allergies === 'no' && activity === 'high') {
-          $("#lab").show();
-          $("#doodle").hide();
-          $("#pug").hide();
-        } else if (age >= 18 && allergies === 'yes') {
-          $("#lab").hide();
-          $("#doodle").show();
-          $("#pug").hide();
+    if (travelerDemo === 'kids' && destination === 'cityMuseum') {
+          $("#ireland").hide();
+          $("#tahiti").hide();
+          $("#amsterdam").show();
+          $("#alaska").hide();
+        } else if (travelerDemo === 'kids' && destination === 'active') {
+          $("#ireland").hide();
+          $("#tahiti").hide();
+          $("#amsterdam").hide();
+          $("#alaska").show();
+        } else if (travelerDemo === 'kids') {
+          $("#ireland").show();
+          $("#tahiti").hide();
+          $("#amsterdam").hide();
+          $("#alaska").hide();
+        } else if (travelerDemo === 'freebird' || travelerDemo === 'friend') {
+          $("#ireland").hide();
+          $("#tahiti").hide();
+          $("#amsterdam").show();
+          $("#alaska").hide();
         } else {
-          $("#pug").show();
-          $("#lab").hide();
-          $("#doodle").hide();
+          $("#ireland").hide();
+          $("#tahiti").hide();
+          $("#amsterdam").show();
+          $("#alaska").hide();
         }
-    console.log("name: " + userName);
-    console.log(travelerAges);
-    console.log(destination);
+    console.log(travelerDemo);
+
         event.preventDefault();
       });
     });
