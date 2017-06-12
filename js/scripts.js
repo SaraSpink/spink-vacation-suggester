@@ -1,14 +1,14 @@
 $(document).ready(function() {
 
-  // $("form#user-prefs").submit(function(event) {
-  //   var userName = $("input#userName").val();
-  //   $(".userName").text(userNameInput);
-  //
-  //   $("#userName").show();
-  // });
+  $("form#user-prefs").submit(function(event) {
+    var userName = $("input#userName").val();
+    $(".fillInName").text(userName);
+
+    // $("#userName").show();
+  });
 
   $("form#user-prefs").submit(function(event) {
-    // var userName = $("input#userName").val();
+    var userName = $("input#userName").val();
     var travelerDemo = $("select#travelerDemo").val();
     var destination = $("select#destination").val();
     var location = $("select#location").val();
